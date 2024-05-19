@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.imageDiv{
+    background-image: url(images/bg.jpg);
+    background-size: 100% 100%;  
+    background-position: center;
+    background-repeat: no-repeat;  
+    width: 85%;
+    height: 100vh;   
+    position: relative;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor:url("images/bug_zapper.png"), pointer;
+}
+
+
+
+
+ .select-menu{
+    position: relative;
+    width: 300px;
+    margin-left: 7%;
+    z-index: 1;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 30px;
+    background: #fff;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+} 
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+} 
+.select-menu .options{
+    position: relative;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+    z-index: 3px;
+}
+.select-menu.active .options{
+    display: block;
+} 
+.options .option{
+    display: flex;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+    font-size: 15px;
+} 
+.options .option:hover{
+    background: #F2F2F2;
+} 
+.option .option-text{  
+    color: #333;
+} 
+
+
+.select-menu2{
+    width: 300px;
+    margin-left: 7%;
+    margin-top: 20px;
+}
+.select-menu2.active .select-btn i{
+    transform: rotate(-180deg);
+} 
+
+.select-menu2.active .options{
+    display: block;
+} 
+
+.playButton{
+    width: 4vw;
+    height: 8vh;
+    position: relative;
+    top: 20px;
+    left: 3vw;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+    transition-property: background-color;
+    transition-delay: 0.2s;
+}
+
+.playButton:hover{
+    background-color: rgb(236, 200, 152);
+}
+
+.mosquitoAlteration{
+    height: 100px;
+    width: 100px;
+}
